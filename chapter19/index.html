@@ -1,0 +1,45 @@
+<HTML>
+<head>
+<title>Dynamic CSS Toolbar</title>
+<style type="text/css">
+a { font-family:Arial, Helvetica, sans-serif; font-size: 12px; color:#FFFFFF; text-decoration: none;}
+.toolbar { background-color: #666666; }
+</style>
+
+<script language="JavaScript">
+//Function to activate a link in the toolbar
+function linkOn(currentLink, cell)
+  currentLink.style.color = red;
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="600" border="0" cellspacing="0" cellpadding="3">
+<tr align="center">
+<td class="toolbar" id="news" width="120">
+<a href="#onMouseOver=linkOn(this, 'news');"
+   onMouseOut=linkOff(this, 'news');>News</a>
+ </td>
+<td class="toolbar" id="resources" width="120">
+<a href="#onMouseOver=linkOn(this, 'resources');"
+   onMouseOut=linkOff(this, 'resources');>Resources</a>
+ </td>
+<td class="toolbar" id="resources" width="120">
+<a href="#onMouseOver=linkOn(this, 'archives');"
+   onMouseOut=linkOff(this, 'archives');>Archives</a>
+ </td>
+<td class="toolbar" id="sitemap" width="120">
+<a href="#onMouseOver=linkOn(this, 'sitemap');"
+   onMouseOut=linkOff(this, 'sitemap');>Site Map</a>
+ </td>
+<td class="toolbar" id="contact" width="180">
+<a href="#onMouseOver=linkOn(this, 'contact');"
+   onMouseOut=linkOff(this, 'contact');>Contact</a>
+ </td>
+</tr>
+</table>
+</body>
+</html>
+
+
